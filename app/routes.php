@@ -18,9 +18,9 @@ Route::post('login', 'AuthController@postLogin');
 Route::group(array('before' => 'auth'), function(){
 	Route::get('/', function()
 	{
-		return View::make('hello');
+		return View::make('auth/hello');
 	});
 	
 	Route::get('logout', 'AuthController@logOut');
-	
+	Route::resource('usuario', 'UsuarioController');
 });

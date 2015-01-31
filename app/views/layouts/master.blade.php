@@ -23,10 +23,18 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
-			<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;Inicio</a></li>
+			<li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;Inicio</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-calendar"></span>&nbsp;Agenda</a></li>
 			<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Directorio</a></li>
-			<li><a href="#"><span class="glyphicon glyphicon-time"></span>&nbsp;Encuentro</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-time"></span>&nbsp;Encuentro</a></li>	
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+			  	<span class="glyphicon glyphicon-cog"></span>&nbsp;Administración<span class="caret"></span></a>
+			  <ul class="dropdown-menu" role="menu">
+				<li><a href="/usuario">Listado de usuarios</a></li>
+				<li><a href="/usuario/create">Nuevo usuario</a></li>
+			  </ul>
+			</li>
 			<li class="dropdown">
 			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
 			  <ul class="dropdown-menu" role="menu">

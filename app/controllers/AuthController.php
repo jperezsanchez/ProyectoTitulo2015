@@ -11,7 +11,7 @@ class AuthController extends BaseController {
             return Redirect::to('/');
         }
         // Mostramos la vista login.blade.php (Recordemos que .blade.php se omite.)
-        return View::make('login');
+        return View::make('auth/login');
     }
 	
 	public function postLogin()

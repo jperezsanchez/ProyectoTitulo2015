@@ -1,0 +1,7 @@
+html, body {
+	height:100%; padding:0px; margin:0px; overflow:hidden;}
+		
+		#scheduler_here {
+			height: 600px;
+			width: 100%;
+		}

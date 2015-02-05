@@ -23,4 +23,5 @@ Route::group(array('before' => 'auth'), function(){
 	
 	Route::get('logout', 'AuthController@logOut');
 	Route::resource('usuario', 'UsuarioController');
+	Route::resource('agenda', 'AgendaController');
 });

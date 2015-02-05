@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Laravel PHP Framework</title>
     {{ HTML::style('css/bootstrap.css'); }}
+    {{ HTML::style('scheduler/dhtmlxscheduler.css'); }}
+    {{ HTML::style('custom/css/schedule-settings.css'); }}
+</style>
 </head>
 <body>
-
 	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -24,7 +26,7 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
 			<li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;Inicio</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-calendar"></span>&nbsp;Agenda</a></li>
+            <li><a href="/agenda"><span class="glyphicon glyphicon-calendar"></span>&nbsp;Agenda</a></li>
 			<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Directorio</a></li>
 			<li><a href="#"><span class="glyphicon glyphicon-time"></span>&nbsp;Encuentro</a></li>	
 			<li class="dropdown">
@@ -63,10 +65,16 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 
-    <div class="container">
+		
+    <div class="container-fluid" style="height:100%;">
+    	@yield('schedule')
 			@yield('content')
     </div>
+    
+
     <script src="https://code.jquery.com/jquery.js"></script>
     {{ HTML::script('js/bootstrap.js'); }}
+    {{ HTML::script('scheduler/dhtmlxscheduler.js'); }}
+    {{ HTML::script('custom/js/schedule.js'); }}
 </body>
 </html>
